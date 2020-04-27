@@ -9,7 +9,7 @@ namespace biocad.KEGG {
                     let i, j, r = [];
 
                     for (i = 0, j = data.selected.length; i < j; i++) {
-                        r.push(data.instance.get_node(data.selected[i]).text);
+                        r.push(data.instance.get_node(data.selected[i]).id);
                     }
 
                     console.log('Selected: ' + r.join(', '));
