@@ -42,7 +42,7 @@ namespace biocad.KEGG.brite {
         return list;
     }
 
-    function parseIDEntry(text: string): IDEntry {
+    export function parseIDEntry(text: string): IDEntry {
         var list = text.split(/\s{2,}/g);
         var id: string = list[0];
         var names: string[] = $from(list)
