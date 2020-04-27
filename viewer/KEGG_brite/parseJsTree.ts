@@ -34,7 +34,8 @@ namespace biocad.KEGG.brite {
                 .ToArray(false);
             let tree: jstree = <jstree>{
                 text: kegg.name,
-                children: nodes
+                children: nodes,
+                icon: biocad.icons.filefolder
             };
 
             return tree;
