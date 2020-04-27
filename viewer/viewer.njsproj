@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="KEGG_brite\br08901.ts" />
+    <TypeScriptCompile Include="KEGG_brite\parseJsTree.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="viewer\viewer.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
