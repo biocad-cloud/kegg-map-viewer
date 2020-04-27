@@ -2,40 +2,28 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>jstree basic demos</title>
+	<title>KEGG pathway map viewer</title>
 	<style>
 	html { margin:0; padding:0; font-size:62.5%; }
 	body { max-width:800px; min-width:300px; margin:0 auto; padding:20px 10px; font-size:14px; font-size:1.4em; }
 	h1 { font-size:1.8em; }
-	.demo { overflow:auto; border:1px solid silver; min-height:100px; }
+	.tree { overflow:auto; border:1px solid silver; min-height:100px; }
 	</style>
 	<link rel="stylesheet" href="../jstree/themes/default/style.min.css" />
 </head>
 <body>
 
-	<div id="data" class="demo">
+	<div id="data" class="tree">
 	</div>
-
-	
 
 	<script src="http://cdn.biodeep.cn:8848/vendor/jquery-3.2.1.min.js"></script>
 	<script src="../jstree/jstree.min.js"></script>
+	<script src="//cdn.biodeep.cn:8848/typescripts/build/linq.js"></script>	
+	<script src="//cdn.biodeep.cn:8848/typescripts/build/SMRUCC.biocad.kegg_viewer.js"></script>
 	
-	<script>
-
-	// inline data demo
-	$('#data').jstree({
-		'core' : {
-			'data' : [
-				{ "text" : "Root node", "children" : [
-						{ "text" : "Child node 1" },
-						{ "text" : "Child node 2" }
-				]}
-			]
-		}
-	});
-
-	
+	<script type="text/javascript">
+	let tree = new biocad.KEGG.viewer("#data");
 	</script>
+	
 </body>
 </html>

@@ -3,7 +3,7 @@ namespace biocad {
     /**
      * https://www.kegg.jp/kegg-bin/get_htext?br08901.keg
     */
-    export const keggMaps = {
+    export const keggMaps: KEGG.brite.IKEGGBrite = <any>{
         "name": "br08901",
         "children": [
             {
