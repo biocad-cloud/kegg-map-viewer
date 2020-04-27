@@ -1,4 +1,4 @@
-﻿namespace KEGGBrite {
+﻿namespace biocad.KEGG.brite {
 
     export interface IKEGGBrite {
         name: string;

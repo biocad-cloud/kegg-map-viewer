@@ -3,7 +3,7 @@
  * 
  * https://www.kegg.jp/kegg/brite.html
 */
-namespace KEGGBrite {
+namespace biocad.KEGG.brite {
 
     /**
      * 将目标brite json文件或者对象解析为对象entry枚举
