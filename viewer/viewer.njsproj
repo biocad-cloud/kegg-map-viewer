@@ -45,6 +45,9 @@
     <TypeScriptCompile Include="KEGG_brite\parseJsTree.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="viewer\icons.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="viewer\viewer.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>

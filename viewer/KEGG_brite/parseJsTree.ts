@@ -25,7 +25,8 @@ namespace biocad.KEGG.brite {
 
             return <jstree>{
                 id: entry.id,
-                text: entry.commonName
+                text: entry.commonName,
+                icon: biocad.icons.codefile
             }
         } else {
             let nodes: jstree[] = $from(kegg.children)
