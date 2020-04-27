@@ -6,7 +6,7 @@
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
     "outDir": "../dist",
-    "outFile": "../../build/kegg_viewer.js",
+    "outFile": "../../build/SMRUCC.biocad.kegg_viewer.js",
     "declaration": true
   },
   "exclude": [

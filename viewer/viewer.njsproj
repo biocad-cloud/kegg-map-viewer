@@ -30,14 +30,14 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="app.ts" />
-    <None Include="KEGGBrite\JSONparser.ts" />
-    <None Include="KEGGBrite\models.ts" />
+    <None Include="KEGG_brite\JSONparser.ts" />
+    <None Include="KEGG_brite\models.ts" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="KEGGBrite\" />
+    <Folder Include="KEGG_brite\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="br08901.ts" />
