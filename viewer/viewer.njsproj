@@ -38,9 +38,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="KEGG_brite\" />
+    <Folder Include="viewer\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="br08901.ts" />
+    <TypeScriptCompile Include="KEGG_brite\br08901.ts" />
+    <TypeScriptCompile Include="viewer\viewer.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
