@@ -1,7 +1,7 @@
 <?php
 
 $mapId = $_GET["map"];
-$id    = join(",", $_POST["id"]);
+$id    = base64_decode($_GET["objects"]);
 
 # render script for a single kegg pathway map
 #

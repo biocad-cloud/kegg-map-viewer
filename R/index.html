@@ -8,7 +8,6 @@
         html {
             margin: 0;
             padding: 0;
-            font-size: 62.5%;
         }
 
         body {
@@ -16,8 +15,7 @@
             min-width: 100%;
             margin: 0 auto;
             padding: 20px 10px;
-            font-size: 14px;
-            font-size: 1.4em;
+            font-size: 0.8em;
         }
 
         h1 {
@@ -46,7 +44,7 @@
     <script src="//cdn.biodeep.cn:8848/typescripts/build/SMRUCC.biocad.kegg_viewer.js"></script>
 
     <script type="text/javascript">
-        let tree = new biocad.KEGG.viewer("#data");
+        let tree = new biocad.KEGG.viewer("#data", ["C00001"]);
     </script>
 
 </body>
