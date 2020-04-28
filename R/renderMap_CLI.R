@@ -32,11 +32,11 @@ if ((length(colorList) > 1) && (length(colorList) != length(highlights))) {
 	}, names = i -> highlights[i]);
 }
 
-print("script will render target objects on kegg map:");
-print(mapId);
-print(`contains ${length(highlights)} objects:`);
+# print("script will render target objects on kegg map:");
+# print(mapId);
+# print(`contains ${length(highlights)} objects:`);
 
-str(highlights);
+# str(highlights);
 
 # load for kegg pathway maps
 # method1, scan a directory that contains template models

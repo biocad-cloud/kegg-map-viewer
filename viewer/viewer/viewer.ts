@@ -25,7 +25,8 @@ namespace biocad.KEGG {
                 marginwidth: "0",
                 marginheight: "0",
                 scrolling: "no",
-                allowtransparency: "yes"
+                allowtransparency: "yes",
+                class: "map"
             }));
 
             $("#" + tree_container)
@@ -46,11 +47,13 @@ namespace biocad.KEGG {
 
                 if (Strings.isIntegerPattern(id)) {
                     break;
+                } else {
+                    id = null;
                 }
             }
 
             if (!Strings.Empty(id, true)) {
-                (<HTMLIFrameElement>$ts(this.mapDisplay).any).src = `run?map=${id}&objects=${this.objects}`;
+                (<HTMLIFrameElement>$ts("#" + this.mapDisplay).any).src = `run?map=${id}&objects=${this.objects}`;
             }
         }
     }
