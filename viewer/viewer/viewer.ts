@@ -13,9 +13,8 @@ namespace biocad.KEGG {
 
             this.mapDisplay = Strings.LTrim(`${id}-map-viewer`, "#");
             this.objects = Base64.encode(objects.join(","));
-
-            $ts(id).appendElement($ts("<div>", { id: tree_container, class: "tree" }));
-            $ts(id).appendElement($ts("<iframe>", {
+            let ifDiv = $ts("<div>", { class:"ifDiv" })
+            let ifram = $ts("<iframe>", {
                 id: this.mapDisplay,
                 width: "1024px",
                 height: "840px",
@@ -27,7 +26,23 @@ namespace biocad.KEGG {
                 scrolling: "no",
                 allowtransparency: "yes",
                 class: "map"
-            }));
+            })
+            $ts(id).appendElement($ts("<div>", { id: tree_container, class: "tree" }));
+            $ts(id).append(ifDiv)
+            ifDiv.append(ifram)
+            /*$ts(id).appendElement($ts("<iframe>", {
+                id: this.mapDisplay,
+                width: "1024px",
+                height: "840px",
+                "max-width": "1024px",
+                frameborder: "no",
+                border: "0",
+                marginwidth: "0",
+                marginheight: "0",
+                scrolling: "no",
+                allowtransparency: "yes",
+                class: "map"
+            }));*/
 
             $("#" + tree_container)
                 // listen for event
