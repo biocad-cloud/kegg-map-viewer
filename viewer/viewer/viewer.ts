@@ -5,7 +5,11 @@ namespace biocad.KEGG {
         /**
          * base64 encoded
         */
-        private objects: string;
+        public objects: string;
+
+        /**
+         * display on this iframe
+        */
         private mapDisplay: string;
 
         public constructor(id: string, objects: string[], tree: brite.jstree = brite.parseTree(biocad.keggMaps)) {
