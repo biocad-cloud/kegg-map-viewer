@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>KEGG pathway map viewer</title>
 
+	<script type="application/json" id="kegg">
+	{$kegg}
+	</script>
+
     <style>
         html {
             margin: 0;
@@ -49,10 +53,5 @@
     <script src="../jstree/jstree.min.js"></script>
     <script src="//cdn.biodeep.cn:8848/typescripts/build/linq.js"></script>
     <script src="//cdn.biodeep.cn:8848/typescripts/build/SMRUCC.biocad.kegg_viewer.js"></script>
-
-    <script type="text/javascript">
-        let tree = new biocad.KEGG.viewer("#data", ["C00001"]);
-    </script>
-
 </body>
 </html>
