@@ -17,7 +17,7 @@ namespace biocad.KEGG {
 
             this.mapDisplay = Strings.LTrim(`${id}-map-viewer`, "#");
             this.objects = Base64.encode(objects.join(","));
-            let ifDiv = $ts("<div>", { class:"ifDiv" })
+            let ifDiv = $ts("<div>", { class: "ifDiv" })
             let ifram = $ts("<iframe>", {
                 id: this.mapDisplay,
                 width: "1024px",
@@ -47,6 +47,8 @@ namespace biocad.KEGG {
                 allowtransparency: "yes",
                 class: "map"
             }));*/
+
+            console.log(tree);
 
             $("#" + tree_container)
                 // listen for event
