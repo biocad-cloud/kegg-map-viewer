@@ -48,6 +48,9 @@
     <TypeScriptCompile Include="viewer\icons.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="viewer\mapSelector.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="viewer\viewer.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
