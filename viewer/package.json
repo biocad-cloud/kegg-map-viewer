@@ -11,6 +11,6 @@
   },
   "dependencies": {
     "@types/jstree": "^3.3.39",
-    "npm": "^11.4.2"
+    "npm": "^11.7.0"
   }
 }
